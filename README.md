@@ -5,3 +5,4 @@ For basic usage
 Request - compute request Sign <br>
 Response - parse and validate Notification message <br>
 Redirect - if you are using RedirectSign <br>
+Check - validate eshop credentials and check active methods <br>
