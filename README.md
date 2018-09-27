@@ -1,7 +1,7 @@
 # 24-pay php classes
-
+<br>
 For basic usage
-
-Request - compute request Sign
-Response - parse and validate Notification message
-Redirect - if you are using RedirectSign
+<br><br>
+Request - compute request Sign <br>
+Response - parse and validate Notification message <br>
+Redirect - if you are using RedirectSign <br>
