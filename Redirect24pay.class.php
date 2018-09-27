@@ -13,7 +13,10 @@ class Redirect24pay{
     if (filter_input(INPUT_GET, 'Sign')){
       $message = filter_input(INPUT_GET, 'MsTxnId').filter_input(INPUT_GET, 'Amount').filter_input(INPUT_GET, 'CurrCode').filter_input(INPUT_GET, 'Result');
       $signCandidat = $this->computeSign($message, $this->mid, $this->key);
-      return $signCandidat == filter_input(INPUT_GET, 'Sign');
+      if  ($signCandidat == filter_input(INPUT_GET, 'Sign'))
+        return true;
+      else
+        return false;
     }
     return true;
   }
