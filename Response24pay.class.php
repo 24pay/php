@@ -12,7 +12,7 @@ class Response24pay{
 
   public function process(){
     if (filter_input(INPUT_POST, 'params') != false){
-      return $this->parseNotification($params);
+      return $this->parseNotification(filter_input(INPUT_POST, 'params'));
     }
     else {
       return false;
