@@ -20,8 +20,6 @@ class Response24pay{
   }
 
   private function parseNotification($params){
-    if (get_magic_quotes_gpc())
-        $params = stripslashes($params);
 
     $params = trim(preg_replace("/^\s*<\?xml.*?\?>/i", "", $params));
 
